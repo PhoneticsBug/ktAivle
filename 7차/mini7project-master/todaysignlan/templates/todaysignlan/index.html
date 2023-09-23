@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Today's Sign Language</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'assets_todaysignlan/css/main.css' %}" />
+    <script>
+        function refreshPage() {
+            location.reload();
+        }
+    </script>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #C3E7E7;
+            color: #262341;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Header -->
+    <div id="header">
+
+        <div class="top">
+
+            <!-- Logo -->
+                <div id="logo">
+                    <span class="image avatar48"><img src='{% static "assets/css/images/logo.png" %}' alt="" /></span>
+                    <h1 id="title">AIVLE School</h1>
+                    <h3>17조</h3>
+                </div>
+
+                      <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="/" id="top-link"><span class="icon solid fa-home">Main</span></a></li>
+                        <li><a href="/selfchatgpt/" id="portfolio-link"><span class="icon solid fa-th">채팅으로 문의하기</span></a></li>
+                        <li><a href="/selfsignlanguagetochatgpt/" id="about-link"><span class="icon solid fa-user">수어로 문의하기</span></a></li>
+                        <li><a href="/todaysignlan/" id="about-link"><span class="icon solid fa-user">오늘의 수어</span></a></li>
+                        <li><a href="/alphabet_to_video/" id="about-link"><span class="icon solid fa-user">알파벳 지문자</span></a></li>
+                    </ul>
+                </nav>
+
+        </div>
+
+    </div>
+    <img src="{{ sign.image.url }}" alt="Sign Language Image">
+    <p>{{ sign.name }}</p>
+    <p>{{ sign.description }}</p>
+
+    <div><a class="button" onclick="refreshPage();">다른 표현 더 알아보기</a>
+        <a class="button" id="home-button" href="/">홈으로</a></div>
+</body>
+</html>

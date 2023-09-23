@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+        {% load static %}
+		<title>챗GPT 기반 수어 번역 서비스</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% comment %} <link rel="stylesheet" href="assets/css/main.css" /> {% endcomment %}
+        <link rel="stylesheet" href="{% static 'assets_alpha/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+                            <span class="image avatar48"><img src='{% static "assets/css/images/logo.png" %}' alt="" /></span>
+							<h1 id="title">AIVLE School<br> 17조 </h1>
+							<br>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+                            <ul>
+                                <li><a href="/" id="top-link"><span class="icon solid fa-home">Main</span></a></li>
+                                <li><a href="/selfchatgpt/" id="portfolio-link"><span class="icon solid fa-th">채팅으로 문의하기</span></a></li>
+                                <li><a href="/selfsignlanguagetochatgpt/" id="about-link"><span class="icon solid fa-user">수어로 문의하기</span></a></li>
+                                <li><a href="/todaysignlan/" id="about-link"><span class="icon solid fa-user">오늘의 수어</span></a></li>
+                                <li><a href="/alphabet_to_video/" id="about-link"><span class="icon solid fa-user">알파벳 지문자</span></a></li>
+                            </ul>
+                        </nav>
+
+				</div>
+
+			</div>
+		<!-- page -->
+		<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Maker</title>
+</head>
+<body>
+    <h2>
+        알파벳으로 수어 배우기
+    </h2> 
+    <h4>
+		알파벳을 하나씩 넣고 버튼을 눌러주세요. <br>
+        입력 후 버튼을 누르거나 ENTER를 입력하면 비디오가 갱신됩니다. <br>
+    </h4>
+	<input type="text" id="inputLetter" placeholder="알파벳을 입력해주세요." onKeypress="javascript:if(event.keyCode==13){videomaker(document.getElementById('inputLetter').value)}"/>
+    <button onclick="videomaker(document.getElementById('inputLetter').value)"> 수어 확인하기 </button>
+    <script>
+        function videomaker(letter) {
+            console.log(letter);
+            letter = letter.toString()
+            console.log(typeof letter)
+            const video = document.createElement('video');
+            const box = document.getElementById('videoContainer');
+            letter = letter.toString().toLowerCase();
+            var alphabets = [
+                "https://videos-asl.lingvano.com/9099-480p.mp4", // a
+                "https://videos-asl.lingvano.com/9101-480p.mp4", // b
+                "https://videos-asl.lingvano.com/9102-480p.mp4", // c
+                "https://videos-asl.lingvano.com/9133-480p.mp4", // d
+                "https://videos-asl.lingvano.com/9103-480p.mp4", // e
+                "https://videos-asl.lingvano.com/9131-480p.mp4", // f
+                "https://videos-asl.lingvano.com/9126-480p.mp4", // g
+                "https://videos-asl.lingvano.com/9132-480p.mp4", // h
+                "https://videos-asl.lingvano.com/9115-480p.mp4", // i
+                "https://videos-asl.lingvano.com/9127-480p.mp4", // j
+                "https://videos-asl.lingvano.com/9111-480p.mp4", // k
+                "https://videos-asl.lingvano.com/9134-480p.mp4", // l
+                "https://videos-asl.lingvano.com/9113-480p.mp4", // m
+                "https://videos-asl.lingvano.com/9108-480p.mp4", // n
+                "https://videos-asl.lingvano.com/9109-480p.mp4", // o
+                "https://videos-asl.lingvano.com/9112-480p.mp4", // p
+                "https://videos-asl.lingvano.com/9124-480p.mp4", // q
+                "https://videos-asl.lingvano.com/9122-480p.mp4", // r
+                "https://videos-asl.lingvano.com/9125-480p.mp4", // s
+                "https://videos-asl.lingvano.com/9120-480p.mp4", // t
+                "https://videos-asl.lingvano.com/9118-480p.mp4", // u
+                "https://videos-asl.lingvano.com/9130-480p.mp4", // v
+                "https://videos-asl.lingvano.com/9116-480p.mp4", // w
+                "https://videos-asl.lingvano.com/9119-480p.mp4", // x
+                "https://videos-asl.lingvano.com/9128-480p.mp4", // y
+                "https://videos-asl.lingvano.com/9129-480p.mp4"  // z
+            ];
+            var alphabet = Array.from("abcdefghijklmnopqrstuvwxyz");
+            if (alphabet.includes(letter)) {
+				var videoContainer = document.getElementById('videoContainer');
+				videoContainer.innerHTML = ''; // 기존 동영상 제거
+
+					console.log(alphabets[alphabet.indexOf(letter)]);
+					video.src = alphabets[alphabet.indexOf(letter)];
+					video.controls = true;
+					video.autoplay = true;
+					video.loop = true;
+					video.height = 480;
+					video.width = 480;
+					box.appendChild(video)
+            }
+        }
+    </script>
+  <!-- <video src="https://videos-asl.lingvano.com/9129-480p.mp4" loop="" autoplay="" playsinline="" style="inset: 0px; object-fit: cover; overflow: hidden;"></video> -->
+  <br>
+  <div id="videoContainer"></div>
+  
+</body>
+</html>
+
+		<!-- Main -->
+			<div id="main">
+
+				
+</html>

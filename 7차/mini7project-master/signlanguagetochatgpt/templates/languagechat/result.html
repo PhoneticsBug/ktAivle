@@ -1,0 +1,54 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'selflanguagechat/css/chat_style.css' %}">
+<div class="one-box">
+  <form action="chat" method="post" entype="application/x-www-form-urlencoded">
+    {% csrf_token %}
+    <span id="file-module-0">
+      <fieldset class="custom-fieldset">
+        <legend class="center-legend"><h1>selfchatgtp에게 요청하기</h1></legend>
+        <div class="input-container">
+          <textarea id="question" name="question">{{question}}</textarea>
+        </div>
+      </fieldset>
+    </span>
+    <hr>
+    <span id="file-module-0">
+      <fieldset class="custom-fieldset">
+        <legend class="center-legend"><h1>응답</h1></legend>
+        <div class="input-container">
+          <textarea id="result" name="result">{{result}}</textarea>
+        </div>
+      </fieldset>
+    </span>
+  </form>
+</div>
+
+<!-- Add a home button -->
+<div class="home-button-container">
+  <a href="/" class="home-button">Home</a>
+</div>
+
+<style>
+  .home-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .home-button-container a.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C3E7E7;
+    border: none;
+    margin: 5px 0;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 1;
+    border-radius: 4px;
+  }
+  </style>
+  
+
+

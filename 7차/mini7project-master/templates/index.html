@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    {% load static %}
+
+	<head>
+		<title>챗GPT 기반 수어 번역 서비스</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+        {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'asset/css/main.css' %}"> {% endcomment %}
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src='{% static "assets/css/images/logo.png" %}' alt="" /></span>
+							<h1 id="title">AIVLE School</h1>
+							<h3>17조</h3>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Main</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Service</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About us</span></a></li>
+								<li><a href="#contact" id="comment-link"><span class="icon solid fa-user">Comment</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">chatGPT를 이용한 수어번역 서비스</h2>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly"><b>서비스 이용하기</b></a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+							<header>
+								<h2><span class='highlight'>Main Service</span></h2>
+							</header>
+
+							<p>본 웹사이트는 chatGPT와 AI 모델을 이용해 수어를 번역하고,<br>
+                            번역된 내용을 chatGPT와 연동할 수 있도록 만들어진 서비스입니다.</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="service_item">
+										{% comment %} <a class="image fit"><img src= '../static/assets/css/images/fla01.png' alt="" /></a> {% endcomment %}
+										<a class="image fit"><img src= '{% static "assets/css/images/fla01.png" %}' alt="" /></a>
+										
+									</article>
+									<br>
+									<article class="service_btn">
+										<a href="selfchatgpt/" class="button scrolly first"><b>채팅으로 문의하기</b></a>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="service_item">
+										{% comment %} <a class="image fit"><img src="images/fla03.png" alt="" /></a> {% endcomment %}
+										<a class="image fit"><img src='{% static "assets/css/images/fla03.png" %}' alt="" /></a>
+									</article>
+									<br>
+									<article class="service_btn">
+										<a href="selfsignlanguagetochatgpt/" class="button scrolly"><b>수어로 문의하기</b></a>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="service_item">
+										<a class="image fit"><img src='{% static "assets/css/images/fla02.png" %}' alt="" /></a>
+									</article>
+									<br>
+									<article class="service_btn">
+										<a href="todaysignlan/" class="button scrolly"><b>오늘의 수어</b></a>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="service_item">
+										<a class="image fit"><img src='{% static "assets/css/images/video.png" %}' alt="" /></a>
+									</article>
+									<br>
+									<article class="service_btn">
+										<a href="alphabet_to_video/" class="button scrolly"><b> 알파벳 수어 배우기 </b></a>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2><span class='highlight'>About us</span></h2>
+							</header>
+
+							<h3>KT AIVLE School AI 5반 17조</h3>
+							<p> AI 개발자로 성장하기 위해 열심히 프로젝트 중입니다! 집에 갈래~</p>
+
+							<a href="#" class="image featured"><img src='{% static "assets/css/images/we.png" %}' alt="" /></a>
+
+                            <div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+										<header>
+											<h3>김영빈</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+										<header>
+											<h3>김덕주</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+										<header>
+											<h3>박재경</h3>
+										</header>
+									</article>
+								</div>
+                                <div class="col-4 col-12-mobile">
+									<article class="item">
+										<!-- <a href="#" class="image fit"><img src="images/pic02.	" alt="" /></a> -->
+										<header>
+											<h3>신윤하</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+										<header>
+											<h3>이현걸</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+										<header>
+											<h3>천승우</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+										<header>
+											<h3>최서연</h3>
+										</header>
+									</article>
+								</div>                                 
+							</div>
+
+							<br>
+							<br>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2><span class='highlight'>Contact</span></h2>
+							</header>
+
+							<p>저희 페이지에 방문해주셔서 감사합니다! <br> 방명록이나 건의사항을 자유롭게 남겨주세요~!</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="건의하기" />
+										<a href="#portfolio" class="button scrolly">댓글보기</a>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+			<br>
+			
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP & 17조 활용</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			{% comment %} <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> {% endcomment %}
+
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>			
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>		
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>	
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>		
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>		
+			<script src="{% static 'assets/js/util.js' %}"></script>		
+			<script src="{% static 'assets/js/main.js' %}"></script>		
+	</body>
+</html>
