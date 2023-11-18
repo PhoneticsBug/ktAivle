@@ -106,4 +106,27 @@ df1.head()
 
 4. x, y 데이터 분리, 표준화 후 모델 생성 
 
+```python
+clear_session()
 
+model = Sequential()
+
+model.add(Input(shape=(x_train_s.shape[1])))
+
+model.add(Dropout(0.2))
+model.add(Dense(64, activation='relu'))
+model.add(Dense(256, activation='relu'))
+model.add(Dense(512, activation='relu'))
+model.add(Dropout(0.2))
+model.add(Dense(256, activation='relu'))
+model.add(Dense(128, activation='relu'))
+model.add(Dropout(0.2))
+model.add(Dense(32, activation='relu'))
+model.add(Dense(2, activation='sigmoid'))
+
+model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'], optimizer='adam')
+
+model.summary()
+```
+
+이후 자세한 내용은 AI 5차 미니프로젝트_VOC.ipynb 파일에 있습니다.
