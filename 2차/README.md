@@ -37,6 +37,11 @@ import matplotlib.pyplot as plt
 
 ### 시각화
 
+```python
+air_21[['PM10','PM25']].plot.line(figsize=(20,8))
+
+```
+
 <img src="https://raw.githubusercontent.com/PhoneticsBug/ktAivle/main/2%EC%B0%A8/img1.png">
 
 #### 상세한 내용 및 코드는 디렉토리 내 ipynb 파일에 있습니다.
